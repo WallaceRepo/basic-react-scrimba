@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Navbar from './components/Navbar'
+import Main from './components/Main'
+import Form from './components/Form'
+import Counter from './components/Counter'
+import Toggle from './components/Toggle'
+import Similar from './components/Similar';
+import StarWar from './components/StarWar'
+import ApiMeme from './components/ApiMeme'
+import WindowTracker from './components/WindowTracker'
 
+import './App.css'
 function App() {
+  const [mode, setMode ] = useState(false)
+  function handleMode(){
+     setMode( prevMode => !prevMode)
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Navbar mode = {mode} toggleMode = {handleMode }/>
+      <div className= {"App " + (mode ? "" : "dark")}>
+      <Main />
+      <Counter />
+      <Form />
+      <Toggle />
+      <Similar />
+      <StarWar />
+      <ApiMeme />
+      <WindowTracker />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
