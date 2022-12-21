@@ -9,7 +9,7 @@ export default function Navbar(props) {
         <h1>React Facts</h1>
       </div>
       <h4>Course Project 1</h4>
-      <div className='btn-cont'>
+      <div className='btn-cont'> 
         <span className='light'>Light</span>
           <div className= 'label' onClick={props.toggleMode}>
             <div className= {"ball " + (props.mode ? "clicked" : " ")}></div>

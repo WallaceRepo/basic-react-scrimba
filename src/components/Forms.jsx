@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Forms() {
     const [fullName, setFullName] = React.useState(
-      {firstName:"", 
+    { firstName:"", 
       lastName: "",
       email: "",
       state: "",
@@ -72,7 +72,8 @@ export default function Forms() {
         <fieldset>
           <legend>Current employment status</legend>
          
-          <input type="radio" id = "partTime"
+          <input type="radio" 
+                 id = "partTime"
                  onChange = {handleChange}
                  name = 'employment'
                  value='part-time'

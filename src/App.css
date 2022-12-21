@@ -138,12 +138,6 @@ button {
   border-radius: 5px;
   border: 1px solid palevioletred;
 }
-p.hide {
-   display: none;
-}
-p.show {
-  display: block;
-}
 
 fieldset {
   max-width:500px;
