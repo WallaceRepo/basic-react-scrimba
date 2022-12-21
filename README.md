@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+### How to get the response json on HTTP error 400+ ?
+odewahn/error-handling-with-fetch.md  --> https://github.com/github/fetch/issues/203
+How to get the response json on HTTP error 400+ ? --->   https://gist.github.com/odewahn/5a5eeb23279eed6a80d7798fdb47fe91 
+Handling Failed HTTP Responses With fetch() --->  https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
